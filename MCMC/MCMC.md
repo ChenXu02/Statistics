@@ -8,9 +8,9 @@
 The goal of MCMC is to construct a Markov chain such that, after running for a long time, its state distribution approximates the target distribution. We can then sample from this chain to obtain samples that reflect the target distribution. MCMC methods are widely used in Bayesian inference, complex model parameter estimation, and other areas.
 
 - **Markov Chain**: A random process where each state depends only on the previous state (memoryless property). In mathematical terms, this means: 
-  \[
-  P(X_t | X_{t-1}, X_{t-2}, \dots) = P(X_t | X_{t-1})
-  \]
+
+  $P(X_t | X_{t-1}, X_{t-2}, \dots) = P(X_t | X_{t-1})$
+
 - **Monte Carlo Method**: A method that approximates solutions to problems by generating random samples. For example, by sampling from the target distribution to compute expectations or estimate other statistics.
 
 ### 2. **Core Steps of MCMC**
@@ -27,9 +27,9 @@ The basic steps of MCMC include:
 
 ### 4. **Gibbs Sampling as a Specific Implementation of MCMC**
 In the MCMC framework, **Gibbs Sampling** updates each parameter by sampling from its conditional distribution, given the current values of all other parameters. The steps of Gibbs Sampling are as follows:
-1. Assume we have multiple parameters \( \theta_1, \theta_2, \dots, \theta_n \).
-2. Initialize each parameter with an initial value (e.g., \( \theta_1^{(0)}, \theta_2^{(0)}, \dots, \theta_n^{(0)} \)).
-3. In step \( i \), sample from the conditional distribution \( p(\theta_i | \theta_{-i}) \), where \( \theta_{-i} \) denotes all the parameters except \( \theta_i \).
+1. Assume we have multiple parameters $ \theta_1, \theta_2, \dots, \theta_n $.
+2. Initialize each parameter with an initial value (e.g., $ \theta_1^{(0)}, \theta_2^{(0)}, \dots, \theta_n^{(0)} $).
+3. In step $ i $, sample from the conditional distribution $ p(\theta_i | \theta_{-i}) $, where $ \theta_{-i} $ denotes all the parameters except $ \theta_i $.
 4. Repeat the process until enough samples are generated.
 
 ### 5. **Other MCMC Algorithms**
