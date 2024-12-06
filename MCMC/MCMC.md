@@ -29,7 +29,7 @@ The basic steps of MCMC include:
 In the MCMC framework, **Gibbs Sampling** updates each parameter by sampling from its conditional distribution, given the current values of all other parameters. The steps of Gibbs Sampling are as follows:
 1. Assume we have multiple parameters $\theta_1, \theta_2, \dots, \theta_n$.
 2. Initialize each parameter with an initial value (e.g., $\theta_1^{(0)}, \theta_2^{(0)}, \dots, \theta_n^{(0)}$).
-3. In step $ i $, sample from the conditional distribution $p(\theta_i | \theta_{-i})$, where $\theta_{-i}$ denotes all the parameters except $\theta_i$.
+3. In step $i$, sample from the conditional distribution $p(\theta_i | \theta_{-i})$, where $\theta_{-i}$ denotes all the parameters except $\theta_i$.
 4. Repeat the process until enough samples are generated.
 
 ### 5. **Other MCMC Algorithms**
