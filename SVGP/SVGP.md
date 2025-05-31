@@ -1,3 +1,6 @@
+# Detailed Derivation of the Variational Gaussian Process ELBO
+
+```latex
 \documentclass[11pt]{article}
 \usepackage{amsmath,amssymb,amsfonts}
 \usepackage{bm}
