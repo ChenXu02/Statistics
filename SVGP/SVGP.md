@@ -1,5 +1,7 @@
 # Detailed Derivation of the Variational Gaussian Process ELBO
 
+(Please render using MathJax or KaTeX)
+
 ## 1. Gaussian Process Regression: Background
 
 We consider a regression problem with training data \(\{(x_i, y_i)\}_{i=1}^N\), where \(x_i \in \mathbb{R}^D\) and \(y_i \in \mathbb{R}\). A Gaussian Process (GP) prior is placed on a latent function \(f: \mathbb{R}^D \to \mathbb{R}\). Specifically,
